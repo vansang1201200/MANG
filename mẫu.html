@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let array = [1, 12, 3, 46, 6, 57, 8, 5];
+        let value = parseInt(prompt("Enter the number: "));
+        for (let i = 0; i < array.length; i++) {
+            if (array[i] === value) {
+                if (i === array.length - 1) {
+                    array[i] = 0;
+                    break;
+                }
+                else {
+                    for (let j = i; j < array.length; j++) {
+                        array[j] = array[j + 1]
+                    }
+                    array.pop();
+                    array.push(0);
+                }
+            }
+        }
+        document.write("<h1>Dãy số " + array + "</h1>");</script>
+</body>
+
+</html>

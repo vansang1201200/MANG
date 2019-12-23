@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let x=[10,12,1,2,3,4,5,7,9,18];
+        let maxvalue=x[0];
+        for (let i=0; i<x.length;i++) {
+            
+            if (x[i]> maxvalue) {
+                maxvalue=x[i]
+                
+               
+            }
+        }
+        
+        let b = x.indexOf(maxvalue);
+        document.write("Phần tử có giá trị lớn nhất là: " + maxvalue + " và nằm ở vị trí số: " + b);
+       
+
+       
+    </script>
+</body>
+</html>
